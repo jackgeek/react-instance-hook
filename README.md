@@ -14,7 +14,7 @@ import useInstance from "react-instance-hook";
 // ...
 const [instance: Object, updateInstance: Function] = useInstance(initialInstanceState: Object);
 // OR
-const [instance: Object, updateInstance: Function] = useInstance(() => Object;
+const [instance: Object, updateInstance: Function] = useInstance(() => Object);
 ```
 
 ## Why use this?
