@@ -40,7 +40,9 @@
     "react-testing-library": "^5.4.2",
     "semantic-release": "^15.13.1"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
