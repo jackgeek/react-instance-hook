@@ -5,7 +5,7 @@ notifications:
 node_js:
   - lts/*
 before_install:
-  - npm i -g npm@^2.0.0
+  - npm i
 before_script:
   - npm prune
 script:
