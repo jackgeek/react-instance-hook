@@ -2,6 +2,18 @@
 
 [![Build Status](https://travis-ci.com/jackgeek/react-instance-hook.svg?branch=master)](https://travis-ci.com/jackgeek/react-instance-hook)
 
+## A React Hook that provides a simple way to avoid out-of-date state values in memoized functions
+
+Usage:
+
+```javascript
+import useInstance from "react-instance-hook";
+
+// ...
+
+const [instance, updateInstance] = useInstance();
+```
+
 ## Why use this?
 
 When using useMemo or useCallback the state values from useState are captured
