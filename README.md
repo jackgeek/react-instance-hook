@@ -4,14 +4,17 @@
 
 ## A React Hook that provides a simple way to avoid out-of-date state values in memoized functions
 
-Usage:
+Provides an object that can be used to store instance variables.
+
+## Usage
 
 ```javascript
 import useInstance from "react-instance-hook";
 
 // ...
-
-const [instance, updateInstance] = useInstance();
+const [instance: Object, updateInstance: Function] = useInstance(initialInstanceState: Object);
+// OR
+const [instance: Object, updateInstance: Function] = useInstance(() => Object;
 ```
 
 ## Why use this?
