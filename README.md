@@ -1,9 +1,11 @@
 # react-instance-hook
 
+[![Build Status](https://travis-ci.com/jackgeek/react-instance-hook.svg?branch=master)](https://travis-ci.com/jackgeek/react-instance-hook)
+
 ## Why use this?
 
 When using useMemo or useCallback the state values from useState are captured
-and therefore could be out of date.  
+and therefore could be out of date.
 
 For example
 
@@ -39,7 +41,7 @@ useInstance provides a function you can call to force an update to occur.
 ```javascript
 function MyComponent() {
   const [instance, update] = useInstance(2);
-  const double = useCallback(() => update(instance.value *= 2), []);
+  const double = useCallback(() => update((instance.value *= 2)), []);
   return <Widget value={instance.value} setValue={setValue} double={double} />;
 }
 ```
