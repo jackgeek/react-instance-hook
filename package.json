@@ -1,6 +1,6 @@
 {
   "name": "react-instance-hook",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.1",
   "description": "React hook for creating instance variables within a functional component.",
   "main": "index.js",
   "scripts": {
