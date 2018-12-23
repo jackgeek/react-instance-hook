@@ -55,7 +55,7 @@ useInstance provides a function you can call to force an update to occur.
 
 ```javascript
 function MyComponent() {
-  const [instance, update] = useInstance(2);
+  const [instance, update] = useInstance({ value: 2 });
   const double = useCallback(() => update((instance.value *= 2)), []);
   return <Widget value={instance.value} setValue={setValue} double={double} />;
 }
